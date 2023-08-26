@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medical Services</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+
+  header {
+    background-color: rgb(64, 90, 195);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif ;
+  }
+  #logo {
+    position: absolute;
+    top: 25px;
+    left: 440px;
+    border-radius: 20%;
+  }
+
+  #logo1 {
+    position: absolute;
+    top: 25px;
+    left: 775px;
+    border-radius: 20%;
+  }
+
+  #pic1 {
+    position: absolute;
+    top: 1px;
+    left: 0px;
+    bottom: 0px;
+  }
+
+  /* Style for the header containing search bar and user profile */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+}
+
+/* Style for the search container */
+.search{
+    text-align: right;
+}
+
+#search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#search-button {
+    padding: 8px 15px;
+    background-color: green;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Style for the user profile */
+.user-profile {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* This pushes the user profile to the right */
+}
+
+.user-profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+  nav {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: beige;
+    padding: 10px 0;
+    margin-left: 240px;
+}
+
+  nav a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+  }
+
+  nav a:hover {
+    background-color: #949494;
+  }
+
+  section {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .toc {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    overflow-y: auto;
+    border-right: 1px solid #ccc;
+    margin-top: 182px;
+}
+
+
+.toc ul {
+    list-style: none;
+    padding: 0;
+}
+
+.toc li {
+    margin-bottom: 10px;
+}
+
+.toc a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* Ensure content starts after the TOC */
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+section h1 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .product {
+        display: inline-block;
+        border: 1px solid #ccc;
+        margin: 10px;
+        padding: 10px;
+        width: 200px;
+        height: 100px;
+        text-align: center;
+    }
+
+    .product img {
+        max-width: 200px;
+        max-height: 200px;
+        margin-bottom: 10px;
+    }
+
+    .product h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .product p {
+        font-size: 16px;
+    }
+
+
+  /* footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  } */
+</style>
+</head>
+<body>
+
+  <header>
+    <div id="pic">
+        <img id="pic1" src="doc.png" width=241px" length="220px">
+    </div>
+    
+    <h1>HEALTH WISER</h1>
+    <h2>Your Health first... </h2>
+    <div id="med">
+        <img id="logo" src="Medic+.png " width="60" alt="logo">
+    </div>
+    <div id="med1">
+        <img id="logo1" src="Medic+.png " width="60" alt="logo">
+    </div>
+
+    <div class="search">
+        <input type="text" id="search-input" placeholder="Search...">
+        <button id="search-button">Search</button>
+    </div>
+  </header>
+
+
+  
+
+  <nav>
+    <center>
+    <a href="tabstrip.html"><strong>Online Consultancy</strong></a>
+    <a href="#hospitals"><strong>Hospitals</strong></a>
+    </center>   
+    <div class="user-profile">
+        <img src="" alt="User">
+    </div>
+  </nav>
+  <section id="doctor">
+
+    <div class="toc">
+        <ul>
+            <h3>Table Of Contents: </h3>
+            <hr>
+            <br>
+            
+
+          <li><a href="">Quick links <br> </a></li>
+          <li><a href="">Reviews</a></li>
+          <li><p>Point 1 </p></li>
+          <li><p>Point 2 </p></li>
+          <li><p>Point 3 </p></li>
+          <br><br><br>
+
+          <hr>
+          <li><a href="#hospitals">For any query <br>Contact: <br> Mb:+91 123456789 <br> Email: xyz@gmail.com 
+        <br></a></li>
+          <!-- Add more sections as needed -->
+        </ul>
+      </div>
+      <h1>We Are Aiming At</h1>
+      <p>1. Providing timely medications to the patients</p>
+      <p>2. managing resources in the hospitals</p>
+      <p>3. Time-effective interaction between doctor and patient </p>
+  </section>
+  
+  <section>
+    <h1>HOSPITALS</h1>
+    <div class="product">
+        <img src="" alt="Image 1">
+
+    </div>
+    <div class="product">
+        <img src=""
+            alt="image 2">
+    </div>
+    <div class="product">
+        <img src=""
+            alt="image 3 ">
+    </div>
+</section>
+  <footer>
+    
+    <!-- <p>&copy; 2023 Medical Services. All rights reserved.</p> -->
+  </footer>
+  <script src="med.js"></script>
+</body>
+</html>
